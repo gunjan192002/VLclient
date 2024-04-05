@@ -9,13 +9,14 @@ function Login()
     const navigate=useNavigate()
     const handleSubmit=(e)=>{
         e.preventDefault();
-    axios.post('http://localhost:3001/login',{email,password})
+    axios.post('https://vlserver-2.onrender.com',{email,password})
     .then(result=>{
-        console.log(result.data.status) 
-        if(result.data.status==="Success"){
+        console.log(result.data) 
+        
+        if(result.data==="Success"){
             navigate('/Home')}
             else alert("Invalid Email or Password");
-            
+       
          }
          )
        

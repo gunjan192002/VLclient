@@ -11,7 +11,7 @@ function Signup(){
     const navigate=useNavigate()
     const handleSubmit=(e)=>{
         e.preventDefault();
-    axios.post('http://localhost:3001/register',{name,email,password}).then(result=>{console.log(result) ,navigate('/login')})
+    axios.post('https://vlserver-2.onrender.com',{name,email,password}).then(result=>{console.log(result) ,navigate('/login')})
         .catch(err=>console.log(err)) 
     }
     return (
