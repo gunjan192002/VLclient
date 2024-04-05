@@ -7,7 +7,7 @@ import logo from "./assets/bullet.png";
 const HomePage = () => {
   // Sample topics
   const topicsWithLogos = [
-    { name: "Open Source Intelligence", logo: logo },
+    { name: "Open Intelligence", logo: logo },
     { name: "Cryptography", logo: logo },
     { name: "Digital Forensics", logo: logo },
     { name: "Network Packet Analysis", logo: logo },
