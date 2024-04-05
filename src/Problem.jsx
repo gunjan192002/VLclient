@@ -34,19 +34,17 @@ const ProblemPage = () => {
   const requestVirtualMachine = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch("http://3.111.169.113/req_vm", {
+      const response = await fetch("/.netlify/functions/proxy", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
       });
-
       if (!response.ok) {
         throw new Error("Failed to request virtual machine.");
       }
-
       const data = await response.json();
-      setResponseMessage(data); // Update to set the entire response object
+      setResponseMessage(data);
     } catch (error) {
       console.error("Error requesting virtual machine:", error);
       setResponseMessage({ message: "An error occurred while requesting the virtual machine." });
