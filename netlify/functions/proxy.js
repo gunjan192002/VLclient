@@ -1,6 +1,6 @@
 exports.handler = async (event, context) => {
     const { httpMethod, headers, body } = event;
-    const apiUrl = 'http://3.109.152.183/req_vm';
+    const apiUrl = 'http://3.111.169.113/req_vm';
   
     try {
       const response = await fetch(apiUrl, {
