@@ -3,6 +3,7 @@ import { FaUser, FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import headlogo from "./assets/dlogo.png";
 import logo from "./assets/bullet.png";
+import LogoutButton from "./components/Logout"; // Import LogoutButton component here
 
 const HomePage = () => {
   // Sample topics
@@ -143,6 +144,7 @@ const HomePage = () => {
             {/* Navigation text removed */}
           </div>
           <div className="flex items-center">
+            <LogoutButton /> {/* Place LogoutButton component here */}
             <Link to="/Profile">
               <FaUser className="text-2xl text-white cursor-pointer" />
             </Link>
