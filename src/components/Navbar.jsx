@@ -30,7 +30,7 @@ const Navbar = () => {
                 <Link to="/login" className="flex justify-between items-center  bg-transparent  px-6 gap-2">
                 <img src={lock} />
                 Login</Link>
-                <Link to="/register" className="px-8 py-3 rounded-md bg-[#20B486] text-white font-bold">
+                <Link to="/signup" className="px-8 py-3 rounded-md bg-[#20B486] text-white font-bold">
                 Sign Up For Free
                </Link>
     
